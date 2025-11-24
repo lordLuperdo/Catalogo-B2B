@@ -1,16 +1,19 @@
 <script setup>
 import star from "../assets/imgs/estrella.png"
+import { UseProductStore } from "~/store/productos";
 
-const props = defineProps(["name", "photo", "arreglo", "price" ])
+const ProductStore = UseProductStore()
+
+const props = defineProps(["name", "photo", "arreglo", "price", "x"])
+
+
 </script>
 
 <template>
 
-<div class=" flex border-b-2 border-color-secundario justify-center items-center border-dashed py-8 px-2 relative">
+<div class=" flex border-b-2 border-color-secundario justify-center items-center border-dashed py-3 px-2 relative">
 
-    <div class="absolute right-4 bottom-[-6%] flex items-center  justify-center bg-color-secundario px-10 py-2 rounded-full">
-        <span class="text-xl font-poppins text-white font-bold">${{ price }}</span>
-    </div>
+   
 
     <div class=" h-full max-w-[50%] px-2 relative">
         <img :src="`https://storage.googleapis.com/prod-images-lndl/taller_de_licores/${photo}.png`" class="w-full z-50 relative" alt="">
@@ -29,8 +32,12 @@ const props = defineProps(["name", "photo", "arreglo", "price" ])
                 <p class="text-sm">
                    {{ a }}
                 </p>
-            </div>
 
+               
+            </div>
+            <button @click="ProductStore.add_to_car(x)" class="  flex items-center  justify-center bg-color-secundario px-5 py-2 rounded-full">
+        <span class=" font-poppins text-white font-bold">al carrito</span>
+    </button>
         </div>
     </div>
 

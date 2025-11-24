@@ -10,5 +10,9 @@ const defindeprops = defineProps(['id','name'])
     </div >
     <p class="text-white font-medium text-center">{{ name }}</p>
     
+    <button @click="ProductStore.add_to_car(x)" class="  flex items-center  justify-center bg-color-secundario w-full rounded-md">
+        <span class=" font-poppins text-white font-bold">al carrito</span>
+    </button>
+
 </div>
 </template>

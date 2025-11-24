@@ -53,6 +53,7 @@ const restar = ()=> {
 :photo="product.id"
 :arreglo="product.products"
 :price="product.price"
+:x="product"
 ></card_producto>
 
 <div class="pb-3 mt-9 px-3 border-b-2 border-color-secundario border-dashed">

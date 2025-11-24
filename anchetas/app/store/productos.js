@@ -3,6 +3,15 @@ import { defineStore } from "pinia";
 export const UseProductStore = defineStore('productos', ()=>{
 
 
+    const car = ref([])
+
+    const car_visible = computed(()=> {return car})
+
+    const add_to_car = (object)=>{
+         car.value.push({...object})
+         console.log(car_visible.value)
+    }
+
 
  const products = {
     cofres:[
@@ -109,6 +118,6 @@ export const UseProductStore = defineStore('productos', ()=>{
  }
 
 
-   return {products}
+   return {products,car,car_visible,add_to_car}
 
 })
