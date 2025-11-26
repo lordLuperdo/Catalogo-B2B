@@ -1,5 +1,10 @@
 <script setup>
-const defindeprops = defineProps(['id','name'])
+import { UseProductStore } from "~/store/productos";
+
+const ProductStore = UseProductStore()
+
+
+const defindeprops = defineProps(['id','name','x'])
 </script>
 
 <template>
@@ -10,7 +15,7 @@ const defindeprops = defineProps(['id','name'])
     </div >
     <p class="text-white font-medium text-center">{{ name }}</p>
     
-    <button @click="ProductStore.add_to_car(x)" class="  flex items-center  justify-center bg-color-secundario w-full rounded-md">
+    <button @click="ProductStore.add_to_car_prod(x)" class="  flex items-center  justify-center bg-color-secundario w-full rounded-md">
         <span class=" font-poppins text-white font-bold">al carrito</span>
     </button>
 
