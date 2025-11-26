@@ -21,7 +21,7 @@ const props = defineProps(["name", "photo", "arreglo", "price", "x"])
     </div>
      
     <div class="md:mb-4 lg:mb-0">
-        <h1 class="text-white font-h1 text-2xl mb-">{{ name }}</h1>
+        <h1 class="text-white font-Pincoya text-2xl mb-">{{ name }}</h1>
 
         <div class="text-white flex flex-col gap-2">
             

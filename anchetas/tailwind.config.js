@@ -11,7 +11,7 @@ export default {
       extend: {
         fontFamily: {
           poppins: ['Poppins', 'sans-serif'],
-          h1: ['CHRISTMAS COMEBACK', 'sans-serif'], 
+          Pincoya: ['CHRISTMAS COMEBACK', 'sans-serif'], 
           a: ['Fixture', 'sans-serif'],
         },
         fontSize: {
