@@ -21,7 +21,7 @@ const props = defineProps(["name", "photo", "arreglo", "price", "x"])
     </div>
      
     <div class="md:mb-4 lg:mb-0">
-        <h1 class="text-white font-Pincoya text-2xl mb-">{{ name }}</h1>
+       <img class="max-w-40 mb-2" :src="`https://storage.googleapis.com/prod-images-lndl/taller_de_licores/titulos/${photo}.png`" alt="">
 
         <div class="text-white flex flex-col gap-2">
             

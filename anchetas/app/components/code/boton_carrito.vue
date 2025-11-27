@@ -4,6 +4,8 @@ const {car_anchetas,car_prod} = UseProductStore()
 
 const visible = ref(false)
 
+const productstore = UseProductStore()
+
 const isvisibleactive = ()=>{
      
     !visible.value ? visible.value = true : visible.value  = false
@@ -11,12 +13,7 @@ const isvisibleactive = ()=>{
 
 }
 
-const cot = (number)=>{
-    
-     const enlace = `https://wa.me/${number}?text=${encodeURIComponent("sssss")}`;
 
-     window.open(enlace, '_blank')
-}
 
 </script>
 
@@ -33,19 +30,21 @@ const cot = (number)=>{
                 <p class="text-white text-center text-3xl">Carrito vácio</p>
             </div>
 
-            <ul class="flex gap-2 flex-col justify-between">
-                <li class="bg-white flex justify-between rounded-full px-1 py-1 gap-2" v-for="a in car_anchetas"
+            <ul class="flex gap-2 flex-col justify-center  ">
+                <li class="bg-white flex justify-center items-center rounded-full px-3 py-1 gap-2" v-for="a in car_anchetas"
                 :key="a">
-                     <p class="ml-3">{{ a.name }}</p>
-                     <button @click="" class="bg-color-principal text-white px-3 rounded-full ">eliminar</button>
+                     <p class=" text-center">{{ a.name }}</p>
+                     <!-- <button @click="productstore.remove_from_car(a.id , productstore.car_anchetas )" class="bg-color-principal text-white px-3 rounded-full ">eliminar</button> -->
                 </li>
             </ul>
 
-            <ul class="flex gap-2 flex-col justfy-between mt-2">
-                <li class="bg-white flex justify-between  rounded-full px-1 py-1 gap-2" v-for="a in car_prod"
+            <ul class="flex gap-2 flex-col justfy-betwecenter  ">
+                <li class="bg-white flex justify-center items-center  rounded-full px31 py-1 gap-2" v-for="a in car_prod"
                 :key="a">
-                     <p class="ml-3">{{ a.name }}</p>
-                     <button @click="" class="bg-color-principal text-white px-3 rounded-full ">eliminar</button>
+                     <p class=" text-center">{{ a.name }}</p>
+
+
+                     <!-- <button @click="" class="bg-color-principal text-white px-3 rounded-full ">eliminar</button> -->
                 </li>
             </ul>
         </div>

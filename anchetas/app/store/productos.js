@@ -25,6 +25,9 @@ const car_double = (id, arreglo) => {
     return arreglo.some(p => p.id === id)
 }
 
+const remove_from_car = (id,arreglo) => {
+    arreglo = arreglo.filter(item => item.id !== id)
+  }
 
 
  const products = {
@@ -134,6 +137,6 @@ const car_double = (id, arreglo) => {
 
 
 
-   return {products,car_anchetas,car_prod,car_prod_visible ,car_anchetas_visible,add_to_car,add_to_car_prod,car_double}
+   return {products,car_anchetas,car_prod,car_prod_visible ,car_anchetas_visible,add_to_car,add_to_car_prod,car_double,remove_from_car}
 
 })

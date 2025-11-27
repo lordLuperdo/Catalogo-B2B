@@ -46,8 +46,8 @@ const restar = ()=> {
     <img src="" alt="">
 </main>
  
-<div class="pb-3  px-3 border-b-2 md:border-none border-color-secundario border-dashed">
-    <h2 class="text-center text-white font-Pincoya text-4xl">ANCHETAS TIPO COFRES</h2>
+<div class="pb-3  px-3 border-b-2 md:border-none border-color-secundario border-dashed xl:px-60 xl:mb-10">
+    <img src="https://storage.googleapis.com/prod-images-lndl/taller_de_licores/titulos/TIPOCOFRES.png" alt="">
 </div>
 
 <div class="md:flex sm:flex-wrap sm:gap-2 sm:justify-center">
@@ -63,8 +63,8 @@ const restar = ()=> {
 </div>
 
 
-<div class="pb-3 mt-6  px-3 border-b-2 md:border-none border-color-secundario border-dashed">
-    <h2 class="text-center text-white font-Pincoya text-4xl">ANCHETAS TIPO MALETIN</h2>
+<div class="pb-3 mt-6  px-3 border-b-2 md:border-none border-color-secundario border-dashed xl:px-60 xl:mb-1 xl:mt-20">
+    <img src="https://storage.googleapis.com/prod-images-lndl/taller_de_licores/titulos/TIPOMALETINES.png" alt="">
 </div>
 
 
@@ -83,9 +83,9 @@ const restar = ()=> {
 
 
 
-<div class="flex flex-col justify-center items-center">
-    <div class="pb-3 mt-9  px-3   border-dashed">
-        <h2 class="text-center text-white font-Pincoya text-4xl">PERSONALIZA TU ANCHETA</h2>
+<div class="flex flex-col justify-center items-center xl:border-t-2 xl:border-color-secundario border-dashed xl:mt-24">
+    <div class="pb-3 mt-9  px-8  xl:px-96 border-dashed">
+        <img src="https://storage.googleapis.com/prod-images-lndl/taller_de_licores/titulos/PERZONALIZA.png" alt="">
     </div>
 
     <input v-model="search_value" class=" border-color-secundario border-2 border-double  w-[80%] rounded-full h-10 text-center text-color-principal" placeholder="Encuentra productos para tu ancheta" type="text" name="" id="">

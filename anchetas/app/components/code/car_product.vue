@@ -15,8 +15,8 @@ const defindeprops = defineProps(['id','name','x'])
     </div >
     <p class="text-white font-medium text-center">{{ name }}</p>
     
-    <button @click="ProductStore.add_to_car_prod(x)" class="  flex items-center  justify-center bg-color-secundario w-full rounded-md">
-        <span class=" font-poppins text-white font-bold">al carrito</span>
+    <button @click="ProductStore.add_to_car_prod(x) " :disabled="ProductStore.car_double(x.id,ProductStore.car_prod)"  class="  flex items-center  justify-center bg-color-secundario w-full rounded-md">
+        <span class=" font-poppins text-white font-bold">{{ ProductStore.car_double(x.id,ProductStore.car_prod) ? 'Agregado' : 'Al carrito' }}</span>
     </button>
 
 </div>
